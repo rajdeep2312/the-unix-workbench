@@ -2,6 +2,7 @@
 
 function guess_files_count {
   local correct_guess=0
+
   local file_count=$(ls -l | grep "^-" | wc -l)
   
   while [[ $correct_guess -eq 0 ]]; do
